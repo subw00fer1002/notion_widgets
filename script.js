@@ -3,7 +3,7 @@ function date() {
     var bd = new Date("September 28, 1997");
     var datetime = today.getTime();
     var bd2 = bd.getTime();
-    var alive = Math.round((datetime-bd2)/86400000,)-1
+    var alive = Math.round((datetime-bd2)/86400000,)
     document.getElementById('date').innerHTML = today.toDateString();
     document.getElementById('old').innerHTML = `Day: ${alive}`;
     }
